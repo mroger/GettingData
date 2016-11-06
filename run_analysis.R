@@ -154,4 +154,4 @@ names(tidy_data_set) <- sub("-std\\(\\)", "Std", names(tidy_data_set))
 names(tidy_data_set) <- sub("-", "", names(tidy_data_set))
 
 #Write the data set to a file
-write.table(tidy_data_set, "./data/tidy_data_set.txt")
+write.table(tidy_data_set, "./data/tidy_data_set.txt", row.name = FALSE)
