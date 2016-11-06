@@ -72,12 +72,15 @@ Bind train and test data sets by its rows so we have all data set in one data se
 Select columns **activity**, **subject** and columns that have **mean()** or **std()** in their names and save it back to human_activity data set.  
 
 * ### Creates a tidy data set with the average of each variable for each activity and each subject
+
 * #### Generate aggregate data set with average values  
 Generate aggregate data set calculating the mean of every value by activity and data set. This is the wide form of tidy data set as discussed in [this site](https://thoughtfulbloke.wordpress.com/2015/09/09/getting-and-cleaning-the-assignment/).  
+
 * #### Rename variable names to keep it tidy
 Append "avg." in front of every column name, except for the activity and subject ones.  
 Replace "-mean()" and "-std()" by "Mean" and "Std" names respectively.  
 Replace remaining "-" by empty string ("").  
+
 * #### Write the tidy data set to file
 Write the tidy data set to a file called *tidy_data_set.txt* in the data folder.  
 
